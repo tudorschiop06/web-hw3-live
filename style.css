@@ -1,0 +1,334 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9e9e9;
+    padding: 20px;
+    line-height: 1.6;
+    max-width: 1100px; /* centreaza pe mijloc */
+    margin: auto;
+    color: #222;
+}
+
+/* tipografie */
+h1, h2, h3 {
+    color: #222;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* header */
+header {
+    background: #222;
+    color: white;
+    padding: 22px;
+    border-radius: 18px 18px 8px 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #e9e9e9;
+    margin-bottom: 0;
+}
+
+/* navigare */
+nav {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px 8px 30px 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* continut */
+main {
+    background-color: white;
+    padding: 24px;
+    border: 1px solid #ddd;
+    margin: 20px auto 0 auto;
+    border-radius: 16px;
+    max-width: 1000px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+section {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* sectiune noua pe homepage */
+.home-hero {
+    background: #222;
+    color: white;
+    padding: 24px;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 1.4fr 180px;
+    gap: 18px;
+    align-items: center;
+    border-bottom: none;
+}
+
+.home-hero h2 {
+    color: white;
+}
+
+.small-label {
+    color: #ceecff;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.home-button {
+    display: inline-block;
+    background: white;
+    color: #222;
+    padding: 10px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-button:hover {
+    background: #ceecff;
+    color: #222;
+}
+
+.home-photo-box {
+    text-align: center;
+}
+
+.home-photo-box img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.home-mini-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    border-bottom: none;
+}
+
+.home-mini-cards article {
+    background: #f7f7f7;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+}
+
+.home-mini-cards article:hover {
+    background: #eeeeee;
+}
+
+/* formular */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+legend,
+label {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form div {
+    padding-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+/* butoane */
+button,
+button[type="submit"],
+button[type="reset"] {
+    background-color: #222;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover,
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #444;
+}
+
+/* reparare butoane sugestii chatbot */
+.suggestions button {
+    color: #222;
+    background: white;
+    border: 1px solid #333;
+    font-weight: normal;
+}
+
+/* tabel */
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+/* cerinta: descendant selector */
+table tbody td {
+    color: #333;
+}
+
+/* cerinta: nth-child */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* focus pentru tastatura */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 3px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+    color: #666;
+}
+
+/* buton skip */
+.skip-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.skip-link:hover {
+    background: #444;
+    color: white;
+}
+
+/* pe telefon */
+@media (max-width: 800px) {
+    .home-hero,
+    .home-mini-cards {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 16px;
+    }
+
+    nav {
+        padding: 12px;
+        border-radius: 8px 8px 18px 18px;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    button,
+    button[type="submit"],
+    button[type="reset"] {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="proiecte.html">Proiecte</a></li>
+            <li><a href="cv.html">CV & Abilitati</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <div id="chat-container">
+            <h1>Asistent virtual</h1>
+            <p>Sunt un bot simplu. Foloseste butoanele sau scrie un mesaj.</p>
+            
+            <div id="chat-box">
+                <p class="bot-msg">Salut! Cu ce te pot ajuta azi?</p>
+            </div>
+
+            <div class="suggestions">
+                <button onclick="puneText('Salut')">Salut</button>
+                <button onclick="puneText('Facultate')">Facultate</button>
+                <button onclick="puneText('Proiecte')">Proiecte</button>
+                <button onclick="puneText('Cine esti?')">Cine esti?</button>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Scrie ceva...">
+                <button onclick="trimiteMesaj()">Trimite</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+/* Desktop - 1 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #000101;
+border-radius: 20px;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 720px;
+height: 1024px;
+left: 720px;
+top: 0px;
+
+background: #05135C;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 720px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: #393A43;
+
+
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 16px;
+
+position: absolute;
+width: 215px;
+height: 92px;
+left: 1132px;
+top: 762px;
+
+
+
+/* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 487px;
+height: 423px;
+left: 836px;
+top: 280px;
+
+
+
+/* Welcome back! */
+
+width: 487px;
+height: 58px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Welcome back! */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Heading */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Sign in to your account */
+
+width: 487px;
+height: 29px;
+
+/* Body */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+color: #DDE5FF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group 1 */
+
+width: 475px;
+height: 74px;
+
+filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Rectangle 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 475px;
+height: 74px;
+left: 6px;
+top: 135px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+border-radius: 10px;
+
+
+/* Email */
+
+position: absolute;
+width: 51px;
+height: 24px;
+left: 17px;
+top: 160px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Group 2 */
+
+width: 475px;
+height: 74px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Rectangle 4 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 475px;
+height: 74px;
+left: 6px;
+top: 233px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+/* Password */
+
+position: absolute;
+width: 93px;
+height: 48px;
+left: 19px;
+top: 259px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Group 3 */
+
+width: 487px;
+height: 92px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 16px;
+
+position: absolute;
+width: 215px;
+height: 92px;
+left: 0px;
+top: 331px;
+
+
+
+/* Frame 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+width: 195px;
+height: 72px;
+
+/* Primary */
+background: #CEECFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Login */
+
+width: 63px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 195px;
+height: 72px;
+left: 292px;
+top: 341px;
+
+/* Primary */
+background: #CEECFF;
+border-radius: 20px;
+
+
+/* Login */
+
+width: 94px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Your Workspace */
+
+position: absolute;
+width: 386px;
+height: 58px;
+left: 167px;
+top: 280px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Access your account securely */
+
+position: absolute;
+width: 344px;
+height: 29px;
+left: 194px;
+top: 362px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* dfsfdsfdsfds 1 */
+
+position: absolute;
+width: 203px;
+height: 203px;
+left: 258px;
+top: 448px;
+
+background: url(dfsfdsfdsfds.png);

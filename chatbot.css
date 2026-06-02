@@ -1,0 +1,70 @@
+/* containerul principal */
+#chat-container {
+    max-width: 500px;
+    margin: 40px auto; 
+    border: 2px solid #333;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* cutia de mesaje  */
+#chat-box {
+    height: 250px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+}
+
+/* butoanele de sugestii */
+.suggestions {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px; /* spatiu intre butoane */
+}
+
+.suggestions button {
+    padding: 5px 15px;
+    cursor: pointer;
+    border: 1px solid #333;
+    background: #fff;
+}
+
+/* zona de scris  */
+.chat-input-area {
+    display: flex;
+    gap: 5px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #333;
+}
+
+.chat-input-area button {
+    padding: 8px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* culori pt mesaje  */
+.bot-msg { color: #0056b3; margin: 5px 0; }
+.user-msg { color: #2e7d32; text-align: right; margin: 5px 0; font-weight: bold; }
+
+/* reparare butoane sugestii */
+.suggestions button {
+    color: #222;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 20px;
+    font-weight: normal;
+}
+
+.suggestions button:hover {
+    background: #e9e9e9;
+    color: #222;
+}

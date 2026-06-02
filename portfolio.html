@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tudor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Portfolio proiecte</h1>
+        <p>Adauga proiecte personale si vezi rezultatul in tabel.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="proiecte.html">Proiecte</a></li>
+            <li><a href="cv.html">CV & Abilitati</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+
+        <section class="portfolio-intro">
+            <div>
+                <p class="small-title">Tema 3</p>
+                <h2>Zona de proiecte personale</h2>
+                <p>Aici pot adauga proiecte prin formular, iar dupa validare apar direct in tabel.</p>
+
+                <div class="intro-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                    <span>DOM</span>
+                    <span>Accessibility</span>
+                </div>
+            </div>
+
+            <img src="avatar.png" alt="avatar albastru pentru portofoliu" loading="lazy">
+        </section>
+
+        <div class="mini-cards">
+            <div>
+                <strong>Formular accesibil</strong>
+                <p>label-uri, erori si validare JS</p>
+            </div>
+            <div>
+                <strong>Tabel dinamic</strong>
+                <p>randuri adaugate din DOM</p>
+            </div>
+            <div>
+                <strong>Responsive</strong>
+                <p>merge pe telefon si desktop</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>Adauga un proiect</h2>
+
+            <div class="portfolio-layout">
+                <form id="project-form" novalidate>
+                    <fieldset>
+                        <legend>Detalii despre proiect</legend>
+
+                        <div>
+                            <label for="project-name">Nume proiect:</label>
+                            <input type="text" id="project-name" name="project-name" aria-describedby="name-error" required>
+                            <p class="error" id="name-error"></p>
+                        </div>
+
+                        <div>
+                            <label for="project-tech">Tehnologii folosite:</label>
+                            <select id="project-tech" name="project-tech" aria-describedby="tech-error" required>
+                                <option value="">Alege tehnologiile</option>
+                                <optgroup label="Web">
+                                    <option value="HTML5, CSS3">HTML5, CSS3</option>
+                                    <option value="HTML5, CSS3, JavaScript">HTML5, CSS3, JavaScript</option>
+                                    <option value="JavaScript, DOM, Events">JavaScript, DOM, Events</option>
+                                    <option value="Responsive Design, Flexbox, Grid">Responsive Design, Flexbox, Grid</option>
+                                </optgroup>
+                                <optgroup label="Programare">
+                                    <option value="C++">C++</option>
+                                    <option value="C++, algoritmi">C++, algoritmi</option>
+                                    <option value="Python basics">Python basics</option>
+                                </optgroup>
+                                <optgroup label="Securitate">
+                                    <option value="Cyber Security">Cyber Security</option>
+                                    <option value="Criptare, parole, securitate">Criptare, parole, securitate</option>
+                                    <option value="Web security basics">Web security basics</option>
+                                </optgroup>
+                            </select>
+                            <p class="error" id="tech-error"></p>
+                        </div>
+
+                        <div class="wide-field">
+                            <label for="project-description">Descriere:</label>
+                            <textarea id="project-description" name="project-description" rows="4" aria-describedby="description-error" required></textarea>
+                            <p class="error" id="description-error"></p>
+                        </div>
+
+                        <div>
+                            <label for="project-url">Link proiect:</label>
+                            <input type="url" id="project-url" name="project-url" placeholder="https://exemplu.ro" aria-describedby="url-error" required>
+                            <p class="error" id="url-error"></p>
+                        </div>
+
+                        <div>
+                            <label for="project-date">Data finalizarii:</label>
+                            <input type="date" id="project-date" name="project-date" aria-describedby="date-error" required>
+                            <p class="error" id="date-error"></p>
+                        </div>
+
+                        <div class="wide-field">
+                            <label for="project-image">Imagine thumbnail:</label>
+
+                            <div id="drop-zone" tabindex="0">
+                                <strong>Trage imaginea aici</strong>
+                                <span>sau apasa ca sa alegi una</span>
+                            </div>
+
+                            <input type="file" id="project-image" name="project-image" accept="image/png, image/jpeg, image/webp" aria-describedby="image-hint image-error">
+                            <p class="hint" id="image-hint">Daca nu alegi nimic, se foloseste avatar.png.</p>
+                            <p class="hint" id="image-name"></p>
+                            <p class="error" id="image-error"></p>
+                        </div>
+
+                        <div class="form-buttons wide-field">
+                            <button type="submit">Adauga proiect</button>
+                            <button type="reset">Reseteaza</button>
+                        </div>
+
+                        <p id="form-status" class="success wide-field" aria-live="polite"></p>
+                    </fieldset>
+                </form>
+
+                <aside class="preview-card" aria-label="Previzualizare proiect">
+                    <p class="small-title">Preview</p>
+                    <img id="preview-image" src="file.png" alt="preview proiect" loading="lazy">
+                    <h3 id="preview-title">Numele proiectului</h3>
+                    <p id="preview-description">Descrierea apare aici in timp ce completezi formularul.</p>
+                    <p><strong>Tech:</strong> <span id="preview-tech">-</span></p>
+                    <p><strong>Data:</strong> <span id="preview-date">-</span></p>
+                </aside>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proiecte adaugate</h2>
+            <div class="table-wrapper">
+                <table id="projects-table">
+                    <caption>Lista proiectelor adaugate din formular</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nume</th>
+                            <th scope="col">Descriere</th>
+                            <th scope="col">URL</th>
+                            <th scope="col">Tehnologii</th>
+                            <th scope="col">Imagine</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Actiune</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portofoliu Web</td>
+                            <td>Site personal cu pagini semantice, design responsive si formular accesibil.</td>
+                            <td><a href="index.html">Vezi pagina</a></td>
+                            <td>HTML5, CSS3, JavaScript</td>
+                            <td><img src="file.png" alt="thumbnail portofoliu web" loading="lazy"></td>
+                            <td>2026-06-02</td>
+                            <td><button type="button" class="delete-btn">Sterge</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chatbot simplu</td>
+                            <td>Pagina interactiva unde raspunsurile sunt cautate intr-un array de obiecte.</td>
+                            <td><a href="chatbot.html">Vezi pagina</a></td>
+                            <td>JavaScript, DOM, Events</td>
+                            <td><img src="android.png" alt="thumbnail chatbot simplu" loading="lazy"></td>
+                            <td>2026-05-10</td>
+                            <td><button type="button" class="delete-btn">Sterge</button></td>
+                        </tr>
+                        <tr>
+                            <td>Manager de Parole</td>
+                            <td>Idee de aplicatie pentru stocarea parolelor intr-un mod mai organizat si sigur.</td>
+                            <td><a href="proiecte.html">Vezi pagina</a></td>
+                            <td>Cyber Security, criptare, parole</td>
+                            <td><img src="project.webp" alt="thumbnail manager de parole" loading="lazy"></td>
+                            <td>2026-01-20</td>
+                            <td><button type="button" class="delete-btn">Sterge</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tudor. Proiect pentru lab, tema 3.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

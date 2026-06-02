@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tudor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Contacteaza-ma</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="proiecte.html">Proiecte</a></li>
+            <li><a href="cv.html">CV & Abilitati</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        
+        <section>
+            <h2>Lasa-mi un mesaj</h2>
+            <p>Pentru orice intrebare completeaza formularul de mai jos.</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Date de contact si mesaj</legend>
+
+                    <div>
+                        <label for="nume">Nume:</label>
+                        <input type="text" id="nume" name="nume" required>
+                    </div>  
+
+                    <div>
+                        <label for="email">Adresa de email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="subiect">Subiectul mesajului:</label>
+                        <select id="subiect" name="subiect">
+                            <option value="altele">Altele</option>
+                            <option value="proiect">Proiect nou</option>
+                            <option value="angajare">Oportunitate de job</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="mesaj">Mesajul tau:</label>
+                        <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Trimite mesajul</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tudor. Proiect pentru lab, tema 3.</p>
+    </footer>
+
+</body>
+</html>

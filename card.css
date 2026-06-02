@@ -1,0 +1,63 @@
+/* element selector */
+body {
+    background-color: #f0f0f0;
+}
+
+/* id selector - container unic */
+#b-card {
+    max-width: 350px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card-image {
+    background-color: #333; /* fundal pt poza */
+    padding: 20px;
+}
+
+/* element selector in context */
+#b-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* poza rotunda */
+    border: 5px solid #fff;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+#b-card h2 {
+    margin: 10px 0;
+    color: #1a1a1a;
+}
+
+/* class selector */
+.spec {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-links a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.card-links a:hover {
+    background-color: #555;
+}
